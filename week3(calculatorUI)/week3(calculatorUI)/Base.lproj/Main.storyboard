@@ -46,18 +46,28 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-Dv-YyV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="96" height="121"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="7"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oH8-PE-EeP"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxC-E9-0U2">
                                                                 <rect key="frame" x="96" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="8"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nN3-su-eyO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D2-PC-HMK">
                                                                 <rect key="frame" x="192" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="9"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wyc-Bo-ode"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77t-lO-Egh">
                                                                 <rect key="frame" x="288" y="0.0" width="96" height="121"/>
@@ -71,6 +81,9 @@
                                                                         </fragment>
                                                                     </attributedString>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="calPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjo-TO-AOH"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -81,21 +94,33 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="96" height="121.5"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="4"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bcb-52-DFX"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-XA-O0C">
                                                                 <rect key="frame" x="96" y="0.0" width="96" height="121.5"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="5"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujh-iU-ECA"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH8-tz-Om2">
                                                                 <rect key="frame" x="192" y="0.0" width="96" height="121.5"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="6"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7M-A6-p4E"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4B-Vp-4Mh">
                                                                 <rect key="frame" x="288" y="0.0" width="96" height="121.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="×"/>
+                                                                <connections>
+                                                                    <action selector="calPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFC-O4-kXl"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -106,21 +131,33 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="1"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZC0-Dc-Vvi"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oy-8A-kBg">
                                                                 <rect key="frame" x="96" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="2"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4s-I9-npT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLL-pl-XFY">
                                                                 <rect key="frame" x="192" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="50"/>
                                                                 <state key="normal" title="3"/>
+                                                                <connections>
+                                                                    <action selector="digitAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjV-Lg-Axt"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owp-Pv-jwk">
                                                                 <rect key="frame" x="288" y="0.0" width="96" height="121"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="﹣"/>
+                                                                <connections>
+                                                                    <action selector="calPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fd-2b-A3J"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -141,6 +178,9 @@
                                                                 <rect key="frame" x="192" y="0.0" width="96" height="121.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="＝"/>
+                                                                <connections>
+                                                                    <action selector="doCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U24-s1-cIf"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqx-cB-z02">
                                                                 <rect key="frame" x="288" y="0.0" width="96" height="121.5"/>
@@ -154,6 +194,9 @@
                                                                         </fragment>
                                                                     </attributedString>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="calPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uru-Ur-jJ2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -183,6 +226,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dispValueLbl" destination="rcX-WT-r3m" id="gAH-ma-9sP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
