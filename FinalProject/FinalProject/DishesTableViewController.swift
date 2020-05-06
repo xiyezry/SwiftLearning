@@ -1,5 +1,5 @@
 //
-//  FirstTableViewController.swift
+//  DishesTableViewController.swift
 //  FinalProject
 //
 //  Created by 钟仁毅 on 2020/5/6.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class RestaurantTableViewController: UITableViewController {
+class DishesTableViewController: UITableViewController {
 
+    var restaurant:String?
     var queryResult:[[String:AnyObject]]?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let sqlite = SQLiteManager.sharedInstance
         sqlite.openDB()
-        queryResult = sqlite.execQuerySQL(sql: "SELECT * FROM restaurant WHERE type = '川菜';")
+        queryResult = sqlite.execQuerySQL(sql: "SELECT * FROM dishes WHERE restaurant = '\(restaurant!)';")
         sqlite.closeDB()
 
-        // Uncomment the following line to preserve selection between presentations
+        // Uncomment the following line to preserve selection between presentation
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -28,19 +29,19 @@ class RestaurantTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 2
     }
 
+
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Restaurant", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dishes", for: indexPath)
         cell.textLabel?.text = queryResult?[indexPath.row]["name"]! as? String
-        cell.detailTextLabel?.text = queryResult?[indexPath.row]["address"]! as? String
-
+        cell.detailTextLabel?.text = queryResult?[indexPath.row]["price"]! as? String
+        cell.imageView?.image = DB.LoadImage(name: (queryResult?[indexPath.row]["name"]! as? String)!)
         return cell
     }
     
@@ -80,19 +81,14 @@ class RestaurantTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let dishesViewController = segue.destination as? DishesTableViewController else
-        {return}
-        if let indexPath = tableView.indexPathForSelectedRow{
-            dishesViewController.restaurant = queryResult?[indexPath.row]["name"]! as? String
-        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }

@@ -116,7 +116,21 @@ class SQLiteManager:NSObject{
             sqlite3_finalize(statement)
             return
         }
+        if sqlite3_bind_blob(statement, 1, blob.bytes, Int32(blob.length), nil) != SQLITE_OK{
+            print("bind blob error:\(sql)")
+            sqlite3_finalize(statement)
+            return
+        }
+        let rslt = sqlite3_step(statement)
+        if rslt != SQLITE_OK && rslt != SQLITE_DONE{
+            print("extue blob error:\(sql)")
+            sqlite3_finalize(statement)
+            return
+        }
+        sqlite3_step(statement)
+        return
     }
+    
     func execLoadBlob(sql:String)->Data?{
         let csql = sql.cString(using:String.Encoding.utf8)!
         var statement:OpaquePointer? = nil

@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74B2FC8E2462D57B0045431D /* DishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */; };
 		74BDCBE42462923A002B9D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE32462923A002B9D00 /* AppDelegate.swift */; };
 		74BDCBE62462923A002B9D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE52462923A002B9D00 /* SceneDelegate.swift */; };
-		74BDCBE82462923A002B9D00 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE72462923A002B9D00 /* FirstViewController.swift */; };
-		74BDCBEA2462923A002B9D00 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE92462923A002B9D00 /* SecondViewController.swift */; };
 		74BDCBED2462923A002B9D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BDCBEB2462923A002B9D00 /* Main.storyboard */; };
 		74BDCBEF2462923C002B9D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDCBEE2462923C002B9D00 /* Assets.xcassets */; };
 		74BDCBF22462923C002B9D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BDCBF02462923C002B9D00 /* LaunchScreen.storyboard */; };
@@ -23,11 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesTableViewController.swift; sourceTree = "<group>"; };
 		74BDCBE02462923A002B9D00 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BDCBE32462923A002B9D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74BDCBE52462923A002B9D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74BDCBE72462923A002B9D00 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		74BDCBE92462923A002B9D00 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		74BDCBEC2462923A002B9D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74BDCBEE2462923C002B9D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BDCBF12462923C002B9D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,9 +74,8 @@
 				74BDCC0124629642002B9D00 /* DB */,
 				74BDCBE32462923A002B9D00 /* AppDelegate.swift */,
 				74BDCBE52462923A002B9D00 /* SceneDelegate.swift */,
-				74BDCBE72462923A002B9D00 /* FirstViewController.swift */,
-				74BDCBE92462923A002B9D00 /* SecondViewController.swift */,
 				74BDCBEB2462923A002B9D00 /* Main.storyboard */,
+				74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */,
 				74BDCC0C2462CD84002B9D00 /* HomeViewController.swift */,
 				74BDCC082462B555002B9D00 /* ShoppingCartTableViewController.swift */,
 				74BDCC022462A258002B9D00 /* RestaurantTableViewController.swift */,
@@ -179,10 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BDCBEA2462923A002B9D00 /* SecondViewController.swift in Sources */,
 				74BDCC0B2462BF3E002B9D00 /* DB.swift in Sources */,
 				74BDCC092462B555002B9D00 /* ShoppingCartTableViewController.swift in Sources */,
-				74BDCBE82462923A002B9D00 /* FirstViewController.swift in Sources */,
+				74B2FC8E2462D57B0045431D /* DishesTableViewController.swift in Sources */,
 				74BDCC032462A258002B9D00 /* RestaurantTableViewController.swift in Sources */,
 				74BDCC0D2462CD84002B9D00 /* HomeViewController.swift in Sources */,
 				74BDCC002462933E002B9D00 /* SQLiteManager.swift in Sources */,
