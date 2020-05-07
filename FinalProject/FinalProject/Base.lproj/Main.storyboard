@@ -284,7 +284,7 @@
             </objects>
             <point key="canvasLocation" x="3077" y="0.0"/>
         </scene>
-        <!--Details Page View Controller-->
+        <!--详细信息-->
         <scene sceneID="KQ7-LO-MZE">
             <objects>
                 <viewController id="T4n-uI-9WC" customClass="DetailsPageViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -348,7 +348,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mxh-RJ-sqg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h1Q-uZ-BKt">
+                    <navigationItem key="navigationItem" title="详细信息" id="h1Q-uZ-BKt">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.badge.plus" catalog="system" id="ejj-L8-aLa">
                             <connections>
                                 <action selector="addToCartPressed:" destination="T4n-uI-9WC" id="BhX-kF-rJc"/>

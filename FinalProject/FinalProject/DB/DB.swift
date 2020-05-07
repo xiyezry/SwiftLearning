@@ -16,9 +16,11 @@ class DB{
         if !sqlite.openDB(){return}
         let createRestaurant = "CREATE TABLE IF NOT EXISTS restaurant('name' TEXT NOT NULL PRIMARY KEY,'type' TEXT, 'address' TEXT);"
         let createDishes = "CREATE TABLE IF NOT EXISTS dishes('name' TEXT NOT NULL PRIMARY KEY,'restaurant' TEXT ,'price' TEXT,'description' TEXT,'pic' BLOB);"
+        let createCart = "CREATE TABLE IF NOT EXISTS cart('index' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,'identifier' TEXT,'name' TEXT ,'price' TEXT);"
         
         if !sqlite.execNoneQuerySQL(sql: createRestaurant){sqlite.closeDB();return}
         if !sqlite.execNoneQuerySQL(sql: createDishes){sqlite.closeDB();return}
+        if !sqlite.execNoneQuerySQL(sql: createCart){sqlite.closeDB();return}
         var restaurant:[String] = []
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('好兄弟川菜馆','川菜','四川成都')")
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('食辣八方川菜馆','川菜','四川雅安')")
