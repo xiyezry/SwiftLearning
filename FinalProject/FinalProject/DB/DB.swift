@@ -79,7 +79,7 @@ class DB{
         let sqlite = SQLiteManager.sharedInstance
         if !sqlite.openDB(){return}
         let sql = "UPDATE dishes SET pic = ? WHERE name = '\(name)'"
-        print("UPDATE dishes SET pic = ? WHERE index = '\(name)'")
+        //print("UPDATE dishes SET pic = ? WHERE index = '\(name)'")
         let data = img!.jpegData(compressionQuality: 1.0) as NSData?
         sqlite.execSaveBlob(sql: sql, blob: data!)
         sqlite.closeDB()
