@@ -38,7 +38,7 @@ class DetailsPageViewController: UIViewController {
     @IBAction func addToCartPressed(_ sender: UIBarButtonItem) {
         let name = nameLabel.text!
         let price = priceLabel.text!
-        print(price)
+        //print(price)
         addToCartDelegate?.addToCart(name: name, price: price)
     }
     

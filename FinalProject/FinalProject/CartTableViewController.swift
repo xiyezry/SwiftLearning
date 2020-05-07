@@ -16,12 +16,10 @@ class CartTableViewController: UITableViewController,AddItemToCartDelegate {
     func addToCart(name:String,price:String) {
         let identifier = Int32.random(in: 0...INT32_MAX)
         let stringIdentifier:String = String(identifier)
-        print(stringIdentifier)
-        print(identifier)
-        let array = ["identifier":"\(String( identifier))","name":"\(name)","price":"\(price)"]
+        //print(stringIdentifier)
+        let array = ["name":"\(name)","price":"\(price)","identifier":"\(String( identifier))"]
         dishes.append(array)
         navigationController?.tabBarItem.badgeValue = "\(dishes.count)"
-        dishes.reverse()
         
         let sqlite=SQLiteManager.sharedInstance
         sqlite.openDB()
@@ -96,7 +94,6 @@ class CartTableViewController: UITableViewController,AddItemToCartDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartItem", for: indexPath)
-        
         cell.textLabel?.text = dishes[indexPath.row]["name"]!
         cell.detailTextLabel?.text = dishes[indexPath.row]["price"]!
         return cell
@@ -120,7 +117,7 @@ class CartTableViewController: UITableViewController,AddItemToCartDelegate {
             // Delete the row from the data source
             let sqlite = SQLiteManager.sharedInstance
             sqlite.openDB()
-            print("DELETE FROM cart WHERE identifier = \(String(dishes[indexPath.row]["identifier"]!))")
+            //print("DELETE FROM cart WHERE identifier = \(String(dishes[indexPath.row]["identifier"]!))")
             sqlite.execNoneQuerySQL(sql: "DELETE FROM cart WHERE identifier = \(String(dishes[indexPath.row]["identifier"]!))")
             sqlite.closeDB()
             dishes.remove(at: indexPath.row)

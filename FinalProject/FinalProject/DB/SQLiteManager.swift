@@ -9,6 +9,7 @@
 import Foundation
 
 class SQLiteManager:NSObject{
+    private var a:Int = 0
     private var dbPath:String!
     private var database:OpaquePointer? = nil
     
@@ -93,7 +94,7 @@ class SQLiteManager:NSObject{
             case SQLITE_NULL:
                 value = NSNull()
             default:
-                print("不支持的数据类型")
+                a+=1
             }
             row[name!] = value ?? NSNull()
         }

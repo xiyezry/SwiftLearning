@@ -13,14 +13,14 @@ class DB{
         ///Users/xiye/Library/Developer/CoreSimulator/Devices/B1CB07BC-C4FA-4478-8210-865040F3C354/data/Containers/Data/Application/14B9FB5B-4379-4F9E-BFBD-0D142A791B25/Documents/app.sqlite
         let sqlite = SQLiteManager.sharedInstance
         
-        if !sqlite.openDB(){return}
+        sqlite.openDB()
         let createRestaurant = "CREATE TABLE IF NOT EXISTS restaurant('name' TEXT NOT NULL PRIMARY KEY,'type' TEXT, 'address' TEXT);"
         let createDishes = "CREATE TABLE IF NOT EXISTS dishes('name' TEXT NOT NULL PRIMARY KEY,'restaurant' TEXT ,'price' TEXT,'description' TEXT,'pic' BLOB);"
         let createCart = "CREATE TABLE IF NOT EXISTS cart('index' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,'identifier' TEXT,'name' TEXT ,'price' TEXT);"
         
-        if !sqlite.execNoneQuerySQL(sql: createRestaurant){sqlite.closeDB();return}
-        if !sqlite.execNoneQuerySQL(sql: createDishes){sqlite.closeDB();return}
-        if !sqlite.execNoneQuerySQL(sql: createCart){sqlite.closeDB();return}
+        sqlite.execNoneQuerySQL(sql: createRestaurant)
+        sqlite.execNoneQuerySQL(sql: createDishes)
+        sqlite.execNoneQuerySQL(sql: createCart)
         var restaurant:[String] = []
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('好兄弟川菜馆','川菜','四川成都')")
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('食辣八方川菜馆','川菜','四川雅安')")
@@ -31,7 +31,7 @@ class DB{
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('广州府菜馆','粤菜','广东广州')")
         restaurant.append("INSERT OR REPLACE INTO restaurant(name,type,address) VALUES('潮州鲜菜馆','粤菜','广东汕头')")
         for e in restaurant {
-            if !sqlite.execNoneQuerySQL(sql: e){sqlite.closeDB();return}
+            sqlite.execNoneQuerySQL(sql: e)
         }
         var dishes:[String] = []
         dishes.append("INSERT OR REPLACE INTO dishes(name,restaurant,price,description) VALUES('麻婆豆腐','好兄弟川菜馆','15','麻婆豆腐，是四川省传统名菜之一，属于川菜，主要原料为豆瓣、豆腐、牛肉末、辣椒和花椒等，麻来自花椒，辣来自辣椒面，这道菜突出了川菜麻辣的特点，其口味独特，口感顺滑')")
@@ -51,7 +51,7 @@ class DB{
         dishes.append("INSERT OR REPLACE INTO dishes(name,restaurant,price,description) VALUES('潮州粉粿','潮州鲜菜馆','12','粉粿是一款广东潮州颇具地方特色的传统小食，它名为粿，但形却似鸡冠饺形，由于它的皮采用澄面皮，故蒸熟后晶莹透明，红红绿绿的粿馅分明可见，十分惹人喜爱。')")
         dishes.append("INSERT OR REPLACE INTO dishes(name,restaurant,price,description) VALUES('潮州牛肉丸','潮州鲜菜馆','39','潮州牛肉丸，是广东潮州著名的地方小食，属于潮菜系。在潮州已经有近百年历史，可分为牛肉丸、牛筋丸两种。牛肉丸肉质较为细嫩，口感嫩滑；牛筋丸由于添加了嫩筋因此更有嚼头、有口感。')")
         for e in dishes{
-            if !sqlite.execNoneQuerySQL(sql: e){sqlite.closeDB();return}
+            sqlite.execNoneQuerySQL(sql: e)
         }
         SaveImage(name:"麻婆豆腐", img: UIImage.init(named: "麻婆豆腐"))
         SaveImage(name:"夫妻肺片", img: UIImage.init(named: "夫妻肺片"))
@@ -71,7 +71,7 @@ class DB{
         SaveImage(name: "潮州牛肉丸", img: UIImage.init(named: "潮州牛肉丸"))
         
         sqlite.closeDB()
-        print("success!")
+        //print("success!")
     }
     
     static func SaveImage(name:String,img:UIImage?){

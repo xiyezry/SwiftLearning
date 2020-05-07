@@ -18,7 +18,6 @@
 		74BDCBFE2462931E002B9D00 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BDCBFD2462931E002B9D00 /* libsqlite3.tbd */; };
 		74BDCC002462933E002B9D00 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBFF2462933E002B9D00 /* SQLiteManager.swift */; };
 		74BDCC032462A258002B9D00 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCC022462A258002B9D00 /* RestaurantTableViewController.swift */; };
-		74BDCC092462B555002B9D00 /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCC082462B555002B9D00 /* ShoppingCartTableViewController.swift */; };
 		74BDCC0B2462BF3E002B9D00 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCC0A2462BF3E002B9D00 /* DB.swift */; };
 		74BDCC0D2462CD84002B9D00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCC0C2462CD84002B9D00 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		74BDCBFD2462931E002B9D00 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		74BDCBFF2462933E002B9D00 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		74BDCC022462A258002B9D00 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
-		74BDCC082462B555002B9D00 /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
 		74BDCC0A2462BF3E002B9D00 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		74BDCC0C2462CD84002B9D00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +81,6 @@
 				74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */,
 				74BDCC0C2462CD84002B9D00 /* HomeViewController.swift */,
 				74ACD5F324638CF300F9AED6 /* DetailsPageViewController.swift */,
-				74BDCC082462B555002B9D00 /* ShoppingCartTableViewController.swift */,
 				74BDCC022462A258002B9D00 /* RestaurantTableViewController.swift */,
 				74BDCBEE2462923C002B9D00 /* Assets.xcassets */,
 				74BDCBF02462923C002B9D00 /* LaunchScreen.storyboard */,
@@ -184,7 +181,6 @@
 			files = (
 				74BDCC0B2462BF3E002B9D00 /* DB.swift in Sources */,
 				74ACD5F424638CF300F9AED6 /* DetailsPageViewController.swift in Sources */,
-				74BDCC092462B555002B9D00 /* ShoppingCartTableViewController.swift in Sources */,
 				748494122463ADDB0057268B /* CartTableViewController.swift in Sources */,
 				74B2FC8E2462D57B0045431D /* DishesTableViewController.swift in Sources */,
 				74BDCC032462A258002B9D00 /* RestaurantTableViewController.swift in Sources */,
