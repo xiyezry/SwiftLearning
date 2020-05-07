@@ -23,7 +23,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-103" y="345"/>
         </scene>
         <!--点餐-->
         <scene sceneID="OXr-pJ-Pxs">
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="906" y="0.0"/>
         </scene>
-        <!--点餐-->
+        <!--菜系选择-->
         <scene sceneID="d8V-iH-fN6">
             <objects>
-                <viewController id="Xrw-Xv-hlw" customClass="HomeViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xrw-Xv-hlw" customClass="HomeViewController" customModule="汐夜小厨房" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="72n-gd-pHh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mnA-r6-ggF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="点餐" id="eVD-AX-RZB"/>
+                    <navigationItem key="navigationItem" title="菜系选择" id="eVD-AX-RZB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npx-Y3-97c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +170,7 @@
         <!--购物车-->
         <scene sceneID="yuc-pO-ybZ">
             <objects>
-                <tableViewController id="6vw-zU-brg" customClass="CartTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="6vw-zU-brg" customClass="CartTableViewController" customModule="汐夜小厨房" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uXf-Jc-EqY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
         <!--餐厅选择-->
         <scene sceneID="BHt-Ow-R9U">
             <objects>
-                <tableViewController id="kma-vl-3eE" customClass="RestaurantTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kma-vl-3eE" customClass="RestaurantTableViewController" customModule="汐夜小厨房" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4pB-uQ-XFD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,7 +286,7 @@
         <!--菜品选择-->
         <scene sceneID="DgZ-Ok-i2q">
             <objects>
-                <tableViewController id="TGZ-Fp-OmC" customClass="DishesTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TGZ-Fp-OmC" customClass="DishesTableViewController" customModule="汐夜小厨房" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zcq-8f-NDY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,7 +334,7 @@
         <!--详细信息-->
         <scene sceneID="KQ7-LO-MZE">
             <objects>
-                <viewController id="T4n-uI-9WC" customClass="DetailsPageViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T4n-uI-9WC" customClass="DetailsPageViewController" customModule="汐夜小厨房" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mOo-mG-shn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
