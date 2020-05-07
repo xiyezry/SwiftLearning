@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		748494122463ADDB0057268B /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748494112463ADDA0057268B /* CartTableViewController.swift */; };
+		74ACD5F424638CF300F9AED6 /* DetailsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACD5F324638CF300F9AED6 /* DetailsPageViewController.swift */; };
 		74B2FC8E2462D57B0045431D /* DishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */; };
 		74BDCBE42462923A002B9D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE32462923A002B9D00 /* AppDelegate.swift */; };
 		74BDCBE62462923A002B9D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDCBE52462923A002B9D00 /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		748494112463ADDA0057268B /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		74ACD5F324638CF300F9AED6 /* DetailsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageViewController.swift; sourceTree = "<group>"; };
 		74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesTableViewController.swift; sourceTree = "<group>"; };
 		74BDCBE02462923A002B9D00 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BDCBE32462923A002B9D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +79,10 @@
 				74BDCBE32462923A002B9D00 /* AppDelegate.swift */,
 				74BDCBE52462923A002B9D00 /* SceneDelegate.swift */,
 				74BDCBEB2462923A002B9D00 /* Main.storyboard */,
+				748494112463ADDA0057268B /* CartTableViewController.swift */,
 				74B2FC8D2462D57B0045431D /* DishesTableViewController.swift */,
 				74BDCC0C2462CD84002B9D00 /* HomeViewController.swift */,
+				74ACD5F324638CF300F9AED6 /* DetailsPageViewController.swift */,
 				74BDCC082462B555002B9D00 /* ShoppingCartTableViewController.swift */,
 				74BDCC022462A258002B9D00 /* RestaurantTableViewController.swift */,
 				74BDCBEE2462923C002B9D00 /* Assets.xcassets */,
@@ -177,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BDCC0B2462BF3E002B9D00 /* DB.swift in Sources */,
+				74ACD5F424638CF300F9AED6 /* DetailsPageViewController.swift in Sources */,
 				74BDCC092462B555002B9D00 /* ShoppingCartTableViewController.swift in Sources */,
+				748494122463ADDB0057268B /* CartTableViewController.swift in Sources */,
 				74B2FC8E2462D57B0045431D /* DishesTableViewController.swift in Sources */,
 				74BDCC032462A258002B9D00 /* RestaurantTableViewController.swift in Sources */,
 				74BDCC0D2462CD84002B9D00 /* HomeViewController.swift in Sources */,

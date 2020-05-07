@@ -9,14 +9,14 @@
 import UIKit
 
 class RestaurantTableViewController: UITableViewController {
-
+    var type:String?
     var queryResult:[[String:AnyObject]]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let sqlite = SQLiteManager.sharedInstance
         sqlite.openDB()
-        queryResult = sqlite.execQuerySQL(sql: "SELECT * FROM restaurant WHERE type = '川菜';")
+        queryResult = sqlite.execQuerySQL(sql: "SELECT * FROM restaurant WHERE type = '\(type!)';")
         sqlite.closeDB()
 
         // Uncomment the following line to preserve selection between presentations
